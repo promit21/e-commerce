@@ -39,7 +39,7 @@ nav a {
 }
 
 .header-text {
-    width: 862px;
+    width: 850px;
     margin: 0 auto;
     text-align: center;
 }
@@ -57,23 +57,138 @@ nav a {
     margin: 50px auto;
     width: 1440px;
     height: 700px;
-    max-width: ;
+}
 
+/* main part */
+
+main{
+    margin: 200px;
+}
+
+/* teams section  */
+.teams {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.teams-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 20px;
+}
+
+.teams-content {
+    padding: 20px;
+}
+
+/* teams features section */
+
+.features-container{
+    display: flex;
+    gap: 50px;
+    margin-top: 140px;
+}
+.featuures-text > h1{
+    font-size: 70px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.featuures-text > p{
+    font-size: 16px;
+}
+.features-card{
+    box-shadow: 3px 3px 3px rgb(131, 122, 122);
+    padding: 20px;
+    margin-top: 30px;
+}
+.features-card > h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.features-card > p {
+    font-size: 16px;
+    margin-top: 0;
+}
+.features-container-img img{
+    height: 90%;
+    margin-left: 50px;
+}
+.experience{
+    background-color: #FF900E;
+    border-radius: 8px;
+    width: 342px;
+    padding: 42px 45px;
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+}
+.experience > h1{
+    font-size: 65px;
+    color: #FFF;
+    margin: 0;
+    margin-bottom: 0;
+}
+.experience > h3{
+    color: #FFF;
+    font-size: 25px;
+}
+/* facts part */
+.facts {
+    margin-top: 50px;
+}
+
+.facts-img-gellary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.facts-img {
+    border: 2px solid #FF900E;
+    text-align: center;
+    padding: 20px;
+    width: 180px;
+    height: 180px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/* Sponspors part */
+.sponspors-text {
+    text-align: center;
+
+}
+
+.sponspors-img {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
 }
 
 
 /* Responsive Tools */
 
 @media screen and (max-width: 576px) {
-    .nav {
+    nav {
         flex-direction: column;
     }
 
     .header-text {
-        width: 400px;
+        width: 300px;
     }
+
+    .header-text h1 {
+        font-size: 20px;
+    }
+
     .header-container img {
         width: 100%;
         height: 100%;
     }
+
+
 }
